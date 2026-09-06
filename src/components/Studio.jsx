@@ -16,7 +16,7 @@ export default function Studio() {
           <h2 className="h2 reveal" style={{ marginTop: '1.1rem', '--d': '80ms' }}>
             A small team
             <br />
-            with an <em className="serif grad-text">unfair</em> range.
+            with an <em className="serif accent-text">unfair</em> range.
           </h2>
           <p className="lead reveal" style={{ marginTop: '1.4rem', '--d': '160ms' }}>
             We're freelancers by choice, not by circumstance. That means no
@@ -34,7 +34,7 @@ export default function Studio() {
           </ul>
 
           <div style={{ marginTop: '2.2rem' }} className="reveal">
-            <WhatsAppButton showArrow message="Hi AA LLC — I'd like to talk about working together.">
+            <WhatsAppButton showArrow message="Hi AA Digital Studio — I'd like to talk about working together.">
               Start a conversation
             </WhatsAppButton>
           </div>

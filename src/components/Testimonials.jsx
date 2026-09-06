@@ -12,7 +12,7 @@ export default function Testimonials() {
             <h2 className="h2 head__title">
               What it's like
               <br />
-              to <em className="serif grad-text">work with us</em>.
+              to <em className="serif accent-text">work with us</em>.
             </h2>
           </div>
         </div>

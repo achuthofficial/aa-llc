@@ -32,12 +32,9 @@ export default function Nav() {
     <>
       <header className={`nav ${stuck ? 'is-stuck' : ''} ${hidden ? 'is-hidden' : ''}`}>
         <div className="shell nav__inner">
-          <a className="brand" href="#top" aria-label="AA LLC home">
+          <a className="brand" href="#top" aria-label="AA Digital Studio home">
             <span className="brand__mark">AA</span>
-            <span>
-              AA LLC
-              <span className="brand__sub">Digital Studio</span>
-            </span>
+            <span className="brand__name">AA Digital Studio</span>
           </a>
 
           <nav className="nav__links" aria-label="Primary">

@@ -10,7 +10,7 @@ export default function Process() {
             <h2 className="h2 head__title">
               From first message
               <br />
-              to <em className="serif grad-text">live</em>.
+              to <em className="serif accent-text">live</em>.
             </h2>
           </div>
           <p className="head__aside reveal" style={{ '--d': '140ms' }}>

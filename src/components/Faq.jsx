@@ -13,7 +13,7 @@ export default function Faq() {
           <h2 className="h2 reveal" style={{ marginTop: '1.1rem', '--d': '80ms' }}>
             Good
             <br />
-            <em className="serif grad-text">questions</em>.
+            <em className="serif accent-text">questions</em>.
           </h2>
           <p
             className="reveal"
@@ -23,7 +23,7 @@ export default function Faq() {
             usually reply the same day.
           </p>
           <div style={{ marginTop: '1.6rem' }} className="reveal">
-            <WhatsAppButton variant="ghost" size="btn--sm" showArrow message="Hi AA LLC — I have a question about your services.">
+            <WhatsAppButton variant="ghost" size="btn--sm" showArrow message="Hi AA Digital Studio — I have a question about your services.">
               Ask a question
             </WhatsAppButton>
           </div>

@@ -13,7 +13,7 @@ export default function CTA() {
           </span>
 
           <h2 className="h2 cta__title">
-            Book a <em className="serif grad-text">consultation</em>.
+            Book a <em className="serif accent-text">consultation</em>.
           </h2>
 
           <p className="lead cta__sub">
@@ -27,7 +27,7 @@ export default function CTA() {
             </WhatsAppButton>
             <a
               className="btn btn--ghost btn--lg"
-              href={whatsappLink('Hi AA LLC — could you send over a quote for a project?')}
+              href={whatsappLink('Hi AA Digital Studio — could you send over a quote for a project?')}
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="hover"

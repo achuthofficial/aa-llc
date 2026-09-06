@@ -15,7 +15,7 @@ export default function Services() {
             <h2 className="h2 head__title">
               Four disciplines
               <br />
-              that <em className="serif grad-text">compound</em>.
+              that <em className="serif accent-text">compound</em>.
             </h2>
           </div>
           <p className="head__aside reveal" style={{ '--d': '140ms' }}>
@@ -33,7 +33,7 @@ export default function Services() {
                 key={s.id}
                 className={`svc reveal ${isOpen ? 'is-open' : ''}`}
                 data-reveal
-                style={{ '--c': s.accent, '--d': `${i * 90}ms` }}
+                style={{ '--d': `${i * 90}ms` }}
               >
                 <button
                   className="svc__head"
@@ -63,7 +63,7 @@ export default function Services() {
                             variant="ghost"
                             size="btn--sm"
                             showArrow
-                            message={`Hi AA LLC — I'd like to book a consultation about ${s.title}.`}
+                            message={`Hi AA Digital Studio — I'd like to book a consultation about ${s.title}.`}
                           >
                             Discuss {s.title}
                           </WhatsAppButton>
