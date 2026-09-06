@@ -25,12 +25,9 @@ export default function Footer() {
       <div className="shell">
         <div className="footer__grid">
           <div className="footer__col">
-            <a className="brand" href="#top" aria-label="AA LLC home">
+            <a className="brand" href="#top" aria-label="AA Digital Studio home">
               <span className="brand__mark">AA</span>
-              <span>
-                AA LLC
-                <span className="brand__sub">Digital Studio</span>
-              </span>
+              <span className="brand__name">AA Digital Studio</span>
             </a>
             <p className="footer__blurb">
               Web applications, agentic AI, cyber security and 3D / AI video —
@@ -84,9 +81,9 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <span>© {new Date().getFullYear()} AA LLC. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} AA Digital Studio. All rights reserved.</span>
           <span className="footer__clock">
-            <span className="hero__dot" style={{ background: 'var(--cyan)' }} />
+            <span className="hero__dot" />
             LOCAL {time}
           </span>
           <a href="#top" className="link-sweep">
@@ -95,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__wordmark" aria-hidden="true">
-          AA LLC
+          AA DIGITAL STUDIO
         </div>
       </div>
     </footer>

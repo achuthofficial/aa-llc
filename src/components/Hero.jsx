@@ -12,11 +12,11 @@ export default function Hero() {
       <div className="hero__veil" />
       <div
         className="glow"
-        style={{ width: '46vw', height: '46vw', left: '-10vw', top: '4vh', background: 'rgba(124,92,255,0.30)' }}
+        style={{ width: '48vw', height: '48vw', left: '-12vw', top: '2vh', background: 'rgba(28,63,156,0.09)' }}
       />
       <div
         className="glow"
-        style={{ width: '38vw', height: '38vw', right: '-8vw', top: '28vh', background: 'rgba(34,211,238,0.22)' }}
+        style={{ width: '40vw', height: '40vw', right: '-10vw', top: '26vh', background: 'rgba(28,63,156,0.06)' }}
       />
 
       <div className="shell hero__inner">
@@ -40,7 +40,7 @@ export default function Hero() {
           </span>
           <span className="line mask-line" style={{ '--d': '190ms' }}>
             <span>
-              <em className="serif grad-text">intelligent</em> edge
+              <em className="serif accent-text">intelligent</em> edge
             </span>
           </span>
           <span className="line mask-line" style={{ '--d': '300ms' }}>
@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="hero__bottom">
           <div data-reveal className="reveal" style={{ '--d': '420ms' }}>
             <p className="lead">
-              AA LLC is a boutique freelance studio shipping high-performance web
+              AA Digital Studio is a boutique freelance studio shipping high-performance web
               applications, autonomous AI agents, hardened security programs and
               Blender-crafted 3D &amp; AI video advertising — end to end, under one roof.
             </p>

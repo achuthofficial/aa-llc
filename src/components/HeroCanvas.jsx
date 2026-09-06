@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 
-const PALETTE = ['#7c5cff', '#22d3ee', '#ffb347', '#34d399']
+const NODE = '#1c3f9c'
+const NODE_MUTED = '#8e95a6'
 
 /**
  * Ambient "neural mesh": drifting nodes that link when close and lean
@@ -36,7 +37,7 @@ export default function HeroCanvas() {
         vx: (Math.random() - 0.5) * 0.24,
         vy: (Math.random() - 0.5) * 0.24,
         r: Math.random() * 1.5 + 0.6,
-        c: PALETTE[(Math.random() * PALETTE.length) | 0],
+        c: Math.random() > 0.55 ? NODE : NODE_MUTED,
       }))
     }
 
@@ -79,7 +80,7 @@ export default function HeroCanvas() {
         ctx.beginPath()
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2)
         ctx.fillStyle = n.c
-        ctx.globalAlpha = 0.7
+        ctx.globalAlpha = 0.5
         ctx.fill()
 
         for (let j = i + 1; j < nodes.length; j++) {
@@ -89,7 +90,7 @@ export default function HeroCanvas() {
           const d2 = dx * dx + dy * dy
           if (d2 > LINK * LINK) continue
 
-          const alpha = (1 - Math.sqrt(d2) / LINK) * 0.3
+          const alpha = (1 - Math.sqrt(d2) / LINK) * 0.16
           ctx.globalAlpha = alpha
           ctx.strokeStyle = n.c
           ctx.lineWidth = 0.6

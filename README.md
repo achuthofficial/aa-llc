@@ -1,8 +1,11 @@
-# AA LLC — Agency Website
+# AA Digital Studio — Agency Website
 
-An award-style single-page marketing site for **AA LLC**, a freelance studio offering
+A single-page marketing site for **AA Digital Studio**, a freelance studio offering
 web applications, agentic AI services, cyber security, and Blender / AI 3D video
 advertising. Built with **React 18 + Vite**.
+
+The design is a light, editorial layout on white with one accent colour
+(a deep professional blue) used sparingly for emphasis, links and calls to action.
 
 Every call to action opens WhatsApp at **+1 (940) 536-3431** with a prefilled
 message, so a visitor is one tap away from booking a consultation.
@@ -34,7 +37,7 @@ src/
   components/          Nav, Hero, Services, Work, Process, Stats, Studio,
                        Testimonials, Faq, CTA, Footer, Cursor, Preloader…
   styles/
-    global.css         Tokens, typography, buttons, cursor, preloader
+    global.css         Colour tokens, typography, buttons, cursor, preloader
     sections.css       Per-section layout
 ```
 
@@ -43,6 +46,12 @@ src/
 Edit `WHATSAPP_NUMBER` and `WHATSAPP_DISPLAY` in `src/data/site.js`. Everything on
 the page — nav button, hero, service rows, FAQ, footer, the floating button and
 the closing CTA — reads from there.
+
+## Changing the accent colour
+
+All colour lives in the `:root` block at the top of `src/styles/global.css`.
+`--accent` (plus `--accent-hover`, `--accent-soft`, `--accent-line`) is the only
+brand hue on the page — change those four values and the whole site follows.
 
 ## Editing content
 
@@ -56,3 +65,4 @@ stats, testimonials and FAQs. No component edits needed for a copy change.
 - The hero background is a lightweight `<canvas>` particle mesh that reacts to the
   pointer; it renders a single static frame under reduced motion.
 - Fonts load from Google Fonts (Inter Tight, Instrument Serif, JetBrains Mono).
+- Body text, muted labels and the accent all clear WCAG AA contrast on white.

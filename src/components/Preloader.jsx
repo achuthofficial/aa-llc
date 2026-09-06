@@ -32,7 +32,7 @@ export default function Preloader({ onDone }) {
       <div className="preloader__inner">
         <div className="preloader__row">
           <span className="preloader__word">
-            AA <span className="serif grad-text">LLC</span>
+            AA <span className="serif accent-text">Digital Studio</span>
           </span>
           <span className="preloader__count">{String(count).padStart(3, '0')}</span>
         </div>

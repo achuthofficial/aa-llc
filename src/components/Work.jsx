@@ -11,7 +11,7 @@ export default function Work() {
             <h2 className="h2 head__title">
               Shipped, measured,
               <br />
-              <em className="serif grad-text">still running</em>.
+              <em className="serif accent-text">still running</em>.
             </h2>
           </div>
           <p className="head__aside reveal" style={{ '--d': '140ms' }}>
@@ -26,7 +26,7 @@ export default function Work() {
               key={w.title}
               className="card reveal"
               data-reveal
-              style={{ '--c': w.accent, '--d': `${i * 110}ms` }}
+              style={{ '--d': `${i * 110}ms` }}
               data-cursor="hover"
             >
               <div className="card__orb" />

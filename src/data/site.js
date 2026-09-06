@@ -2,7 +2,7 @@ export const WHATSAPP_NUMBER = '19405363431'
 export const WHATSAPP_DISPLAY = '+1 (940) 536-3431'
 
 export const whatsappLink = (
-  message = "Hi AA LLC — I'd like to book a consultation about a project."
+  message = "Hi AA Digital Studio — I'd like to book a consultation about a project."
 ) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 
 export const NAV_LINKS = [
@@ -28,7 +28,6 @@ export const SERVICES = [
       'API / backend architecture',
       'Performance & Core Web Vitals',
     ],
-    accent: '#7c5cff',
   },
   {
     id: 'ai',
@@ -44,7 +43,6 @@ export const SERVICES = [
       'Workflow & process automation',
       'Evals, guardrails & observability',
     ],
-    accent: '#22d3ee',
   },
   {
     id: 'security',
@@ -60,7 +58,6 @@ export const SERVICES = [
       'Secure code & architecture review',
       'Compliance readiness & training',
     ],
-    accent: '#34d399',
   },
   {
     id: '3d',
@@ -76,7 +73,6 @@ export const SERVICES = [
       'AI-generated video ads',
       'Brand motion & campaign assets',
     ],
-    accent: '#ffb347',
   },
 ]
 
@@ -93,7 +89,6 @@ export const WORK = [
     year: '2025',
     blurb: 'Operations platform for a logistics network — real-time fleet telemetry, 40+ dashboards.',
     metric: '−62% ops handling time',
-    accent: '#7c5cff',
   },
   {
     title: 'Atlas Agent',
@@ -101,7 +96,6 @@ export const WORK = [
     year: '2025',
     blurb: 'A multi-agent support desk that resolves tickets end to end with tool access and audit trails.',
     metric: '78% autonomous resolution',
-    accent: '#22d3ee',
   },
   {
     title: 'Redline',
@@ -109,7 +103,6 @@ export const WORK = [
     year: '2024',
     blurb: 'Full-scope application and cloud penetration test for a fintech pre-Series B.',
     metric: '31 findings, 0 recurrences',
-    accent: '#34d399',
   },
   {
     title: 'Nova Bottle',
@@ -117,7 +110,6 @@ export const WORK = [
     year: '2025',
     blurb: 'Photoreal Blender product film and a 14-cut AI ad suite for a DTC beverage launch.',
     metric: '4.1× ad click-through',
-    accent: '#ffb347',
   },
 ]
 
