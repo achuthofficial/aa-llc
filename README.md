@@ -1,4 +1,4 @@
-# AA Studioz — Jack, 3D Creator
+# AA Studioz — 3D Creator
 
 A single-page 3D creator portfolio landing page built with React, TypeScript, Tailwind CSS,
 Framer Motion and Lucide React.
@@ -30,8 +30,11 @@ npm run typecheck  # typecheck only
 
 ```
 src/
-  components/   FadeIn, Magnet, AnimatedText, ContactButton, LiveProjectButton
-  sections/     HeroSection, MarqueeSection, AboutSection, ServicesSection, ProjectsSection
+  components/   FadeIn, Magnet, AnimatedText, ContactButton, LiveProjectButton,
+                WhatsAppButton
+  sections/     HeroSection, MarqueeSection, AboutSection, ServicesSection,
+                ProjectsSection, ContactSection, Footer
+  data/         contact.ts — WhatsApp numbers used by the contact section and footer
   pages/        Home, NotFound
   App.tsx       routes
   index.css     Tailwind layers + global reset + .hero-heading gradient
@@ -45,6 +48,11 @@ src/
 3. **About** — decorative 3D corner art plus a character-by-character scroll-reveal paragraph.
 4. **Services** — six numbered service entries on a white, rounded-top panel.
 5. **Projects** — three sticky cards that stack and scale down as you scroll past them.
+6. **Contact** — two WhatsApp deep-link buttons, one Indian number and one US number.
+7. **Footer** — brand mark, menu, both WhatsApp numbers and the copyright line.
+
+WhatsApp numbers live in `src/data/contact.ts` and are rendered in both the contact
+section and the footer, so changing a number there updates it everywhere.
 
 ## Deployment
 

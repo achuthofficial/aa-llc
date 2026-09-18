@@ -3,6 +3,8 @@ import MarqueeSection from '../sections/MarqueeSection'
 import AboutSection from '../sections/AboutSection'
 import ServicesSection from '../sections/ServicesSection'
 import ProjectsSection from '../sections/ProjectsSection'
+import ContactSection from '../sections/ContactSection'
+import Footer from '../sections/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </main>
   )
 }

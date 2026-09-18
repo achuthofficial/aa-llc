@@ -9,8 +9,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ]
 
-const PORTRAIT_URL =
-  'https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png'
+const PORTRAIT_URL = 'https://flow.google.com/shared/image/b8263bf2-1272-46f2-90c5-60d73ab3f8b0'
 
 export default function HeroSection() {
   return (
@@ -32,8 +31,13 @@ export default function HeroSection() {
 
       <div className="overflow-hidden px-6 md:px-10">
         <FadeIn as="h1" delay={0.15} y={40}>
-          <span className="hero-heading block w-full whitespace-nowrap text-[14vw] font-black uppercase leading-none tracking-tight sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]">
-            Hi, i&rsquo;m jack
+          {/*
+            Sizes are tuned so "AA STUDIOZ" fills the gutters edge-to-edge without
+            clipping. md dips below the sm value on purpose: the horizontal padding
+            jumps from px-6 to px-10 there, so the available width shrinks.
+          */}
+          <span className="hero-heading block w-full whitespace-nowrap text-[14.8vw] font-black uppercase leading-none tracking-tight sm:text-[16.4vw] md:text-[15.8vw] lg:text-[16.3vw]">
+            AA Studioz
           </span>
         </FadeIn>
       </div>
@@ -63,7 +67,7 @@ export default function HeroSection() {
           >
             <img
               src={PORTRAIT_URL}
-              alt="Jack, 3D creator"
+              alt="AA Studioz 3D creator"
               className="h-auto w-full select-none"
               draggable={false}
             />
