@@ -67,12 +67,14 @@ function ProjectCard({ project, index, progress, range, targetScale }: ProjectCa
   const scale = useTransform(progress, range, [1, targetScale])
 
   return (
-    <div className="sticky top-24 flex h-[85vh] items-start justify-center md:top-32">
+    <div className="sticky top-24 flex h-[62vh] items-start justify-center sm:h-[72vh] md:top-32 md:h-[85vh]">
       <motion.article
-        className={`relative w-full origin-top border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 ${CARD_RADIUS}`}
-        style={{ scale, top: `${index * 28}px` }}
+        className={`relative flex w-full origin-top flex-col border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 ${CARD_RADIUS}`}
+        // The card fills its sticky box minus the stack offset, so the image takes
+        // whatever height is left instead of leaving dead space below the card.
+        style={{ scale, top: `${index * 28}px`, height: `calc(100% - ${index * 28}px)` }}
       >
-        <div className="mb-4 flex items-center gap-4 sm:mb-6 sm:gap-6 md:mb-8 md:gap-8">
+        <div className="mb-4 flex shrink-0 items-center gap-3 sm:mb-6 sm:gap-6 md:mb-8 md:gap-8">
           <span
             className="shrink-0 font-black leading-none text-[#D7E2EA]"
             style={{ fontSize: 'clamp(2.5rem, 8vw, 110px)' }}
@@ -94,8 +96,8 @@ function ProjectCard({ project, index, progress, range, targetScale }: ProjectCa
         </div>
 
         <div
-          className={`w-full overflow-hidden ${CARD_RADIUS}`}
-          style={{ height: 'clamp(180px, 32vw, 420px)', background: PANEL_GRADIENT }}
+          className={`min-h-0 w-full flex-1 overflow-hidden ${CARD_RADIUS}`}
+          style={{ background: PANEL_GRADIENT }}
         >
           <img
             src={project.image}
