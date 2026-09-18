@@ -3,7 +3,7 @@ import { WHATSAPP_CONTACTS } from '../data/contact'
 
 const FOOTER_LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Price', href: '#services' },
+  { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -27,7 +27,7 @@ export default function Footer() {
               className="max-w-[280px] font-light uppercase leading-snug tracking-wide text-[#D7E2EA] opacity-60"
               style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1rem)' }}
             >
-              a 3d creator driven by crafting striking and unforgettable projects
+              web, ai and data products — built with relentless care until every detail earns its place
             </p>
           </FadeIn>
 

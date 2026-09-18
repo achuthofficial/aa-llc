@@ -36,7 +36,7 @@ const DECORATIONS = [
 ]
 
 const ABOUT_COPY =
-  'With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let’s build something incredible together!'
+  'We build web applications, ai automation, mobile and desktop products, branding, saas platforms and the data science behind them. Every project gets the same obsession, from the first wireframe to the last deploy. Let\u2019s build something incredible together!'
 
 export default function AboutSection() {
   return (
@@ -65,7 +65,7 @@ export default function AboutSection() {
               className="hero-heading block text-center font-black uppercase leading-none tracking-tight"
               style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
             >
-              About me
+              About us
             </span>
           </FadeIn>
 
