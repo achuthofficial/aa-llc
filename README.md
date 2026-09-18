@@ -1,68 +1,53 @@
-# AA Digital Studio — Agency Website
+# AA Studioz — Jack, 3D Creator
 
-A single-page marketing site for **AA Digital Studio**, a freelance studio offering
-web applications, agentic AI services, cyber security, and Blender / AI 3D video
-advertising. Built with **React 18 + Vite**.
+A single-page 3D creator portfolio landing page built with React, TypeScript, Tailwind CSS,
+Framer Motion and Lucide React.
 
-The design is a light, editorial layout on white with one accent colour
-(a deep professional blue) used sparingly for emphasis, links and calls to action.
+## Stack
 
-Every call to action opens WhatsApp at **+1 (940) 536-3431** with a prefilled
-message, so a visitor is one tap away from booking a consultation.
+- **React 18** + **TypeScript**, bundled with **Vite**
+- **Tailwind CSS 3** for styling, with Kanit (Google Fonts) as the type family
+- **Framer Motion** for scroll-driven and reveal animations
+- **React Router** for client-side routing
+- **Lucide React** for icons
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
+npm run dev
 ```
 
-## Scripts
+Other scripts:
 
-| Command           | Description                          |
-| ----------------- | ------------------------------------ |
-| `npm run dev`     | Start the dev server with HMR        |
-| `npm run build`   | Production build into `dist/`        |
-| `npm run preview` | Serve the production build locally   |
+```bash
+npm run build      # typecheck + production build to dist/
+npm run preview    # serve the production build locally
+npm run typecheck  # typecheck only
+```
 
 ## Structure
 
 ```
 src/
-  App.jsx              Page composition, smooth scroll, scroll progress
-  data/site.js         All copy, services, work, FAQs + the WhatsApp helper
-  hooks/
-    useReveal.js       IntersectionObserver scroll reveals
-    useCountUp.js      Stat counters that animate into view
-  components/          Nav, Hero, Services, Work, Process, Stats, Studio,
-                       Testimonials, Faq, CTA, Footer, Cursor, Preloader…
-  styles/
-    global.css         Colour tokens, typography, buttons, cursor, preloader
-    sections.css       Per-section layout
+  components/   FadeIn, Magnet, AnimatedText, ContactButton, LiveProjectButton
+  sections/     HeroSection, MarqueeSection, AboutSection, ServicesSection, ProjectsSection
+  pages/        Home, NotFound
+  App.tsx       routes
+  index.css     Tailwind layers + global reset + .hero-heading gradient
 ```
 
-## Changing the WhatsApp number
+### Sections
 
-Edit `WHATSAPP_NUMBER` and `WHATSAPP_DISPLAY` in `src/data/site.js`. Everything on
-the page — nav button, hero, service rows, FAQ, footer, the floating button and
-the closing CTA — reads from there.
+1. **Hero** — full-viewport nav, gradient display heading and a mouse-magnetic portrait.
+2. **Marquee** — two rows of preview GIFs that scroll horizontally in opposite directions,
+   driven by page scroll position.
+3. **About** — decorative 3D corner art plus a character-by-character scroll-reveal paragraph.
+4. **Services** — six numbered service entries on a white, rounded-top panel.
+5. **Projects** — three sticky cards that stack and scale down as you scroll past them.
 
-## Changing the accent colour
+## Deployment
 
-All colour lives in the `:root` block at the top of `src/styles/global.css`.
-`--accent` (plus `--accent-hover`, `--accent-soft`, `--accent-line`) is the only
-brand hue on the page — change those four values and the whole site follows.
-
-## Editing content
-
-All copy lives in `src/data/site.js`: services, case studies, process steps,
-stats, testimonials and FAQs. No component edits needed for a copy change.
-
-## Notes
-
-- Smooth scrolling uses [Lenis](https://github.com/darkroomengineering/lenis) and is
-  disabled automatically for visitors with `prefers-reduced-motion`.
-- The hero background is a lightweight `<canvas>` particle mesh that reacts to the
-  pointer; it renders a single static frame under reduced motion.
-- Fonts load from Google Fonts (Inter Tight, Instrument Serif, JetBrains Mono).
-- Body text, muted labels and the accent all clear WCAG AA contrast on white.
+`vercel.json` sets the Vite build, `dist` as the output directory and an SPA rewrite so
+client-side routes resolve on direct load and refresh. Deploying the repo to Vercel needs
+no further configuration.
