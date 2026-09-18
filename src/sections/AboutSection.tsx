@@ -36,7 +36,7 @@ const DECORATIONS = [
 ]
 
 const ABOUT_COPY =
-  'We build web applications, ai automation, mobile and desktop products, branding, saas platforms and the data science behind them. Every project gets the same obsession, from the first wireframe to the last deploy. Let\u2019s build something incredible together!'
+  'We are a group of friends spread across different countries, with 5+ years of industrial experience between us. We build web apps, ai automation, saas platforms, brands, and the data science behind them.'
 
 export default function AboutSection() {
   return (

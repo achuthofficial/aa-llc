@@ -23,7 +23,7 @@ export default function ContactSection() {
           className="max-w-[560px] text-center font-light uppercase leading-snug tracking-wide text-[#D7E2EA]"
           style={{ fontSize: 'clamp(0.85rem, 1.6vw, 1.25rem)' }}
         >
-          got a project in mind? message us on whatsapp — we reply fast
+          got something in mind? we are one message away
         </p>
       </FadeIn>
 
