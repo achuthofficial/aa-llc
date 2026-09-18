@@ -9,7 +9,7 @@ type ContactButtonProps = {
  * Pairs with LiveProjectButton, which is the outlined secondary variant.
  */
 export default function ContactButton({
-  label = 'Contact Me',
+  label = 'Contact Us',
   href = '#contact',
   className = '',
 }: ContactButtonProps) {
