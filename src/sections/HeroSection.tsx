@@ -9,7 +9,9 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ]
 
-const PORTRAIT_URL = 'https://flow.google.com/shared/image/b8263bf2-1272-46f2-90c5-60d73ab3f8b0'
+// Served from public/. The source render is 4096², resized to 2x the largest
+// display width and encoded as WebP so the hero image is ~73KB rather than 7MB.
+const PORTRAIT_URL = '/hero-portrait.webp'
 
 export default function HeroSection() {
   return (
@@ -67,9 +69,13 @@ export default function HeroSection() {
           >
             <img
               src={PORTRAIT_URL}
-              alt="AA Studioz 3D creator"
+              alt="3D isometric scene of a character studying data charts through a magnifying glass"
+              width={1040}
+              height={1040}
               className="h-auto w-full select-none"
               draggable={false}
+              // Hero image is the LCP element, so it loads eagerly and at high priority.
+              fetchPriority="high"
             />
           </Magnet>
         </FadeIn>
